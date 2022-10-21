@@ -16,7 +16,7 @@ class Role(str, Enum):
     student = "student"
 
 class User (Base):
-    __tablename__ = "user"
+    __tablename__ = "users"
     id = Column(Integer, primary_key=True, index=True)
     first_name = Column(String)
     last_name = Column(String)
