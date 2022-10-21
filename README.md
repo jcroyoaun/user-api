@@ -14,18 +14,18 @@ This is a repository for creating an API to perform CRUD actions on users for a 
 * Commented put and delete methods to leave MVP (get and create users only)
 * Added necessary libraries to connect to Database
 
-### Used sqlite3 to create this DB
-CREATE TABLE users (
-    id INTEGER NOT NULL, 
-    first_name VARCHAR, 
-    last_name VARCHAR, 
-    middle_name VARCHAR
-);
+## v2.0 - Application with Postgres and Dockerf fully integrated with Docker compose
+*Features*
+* Same app, same functionality, but now with Docker compose and Postgres
+
+## v2.1 - Added CI/CD for pushing the docker image of the FastAPI (user-api) container to hub.docker.com
+
 
 
 # Example run so far :
 From the directory where project was cloned :
 
-docker run -p 8000:8000 -v 'mock-db:/usr/src/app/' internship-api-project
+docker pull jcroyoaun/user-api:latest
+docker compose up -d
 
 
